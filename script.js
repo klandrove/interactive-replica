@@ -9,6 +9,8 @@ function playVideo(event){
     var gridImage = image.closest('.grid-image');
     const videoElement = gridImage.querySelector('.video');
     videoElement.style.display = 'block';
+    videoElement.style.clipPath = 'polygon(30% 0, 100% 0, 100% 70%, 70% 100%, 0 100%, 0 30%)';
+    videoElement.style.borderRadius = '15%';
     videoElement.play(); // Play the video on hover
     videoElement.style.transform = 'scale(1.1)';
 }
@@ -18,6 +20,7 @@ function stopVideo(event){
     const videoElement = gridImage.querySelector('.video');
     console.log(videoElement);
     videoElement.style.display = 'none';
+    videoElement.style.clipPath = 'polygon(100% 0, 100% 100%, 0 100%, 0 0)';
     videoElement.pause(); // Pause the video when not hovering
     image.style.transform = 'scale(1)'; // Reset scale
 }

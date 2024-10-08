@@ -120,6 +120,7 @@ input[type="radio"]:not(:checked):hover {
     height: auto;
     object-fit: contain;
     display: block;
+    transition: opacity 0.5s ease, clip-path 0.5s ease;
 }
 .grid-image video {
     position: relative;
@@ -127,16 +128,19 @@ input[type="radio"]:not(:checked):hover {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensure the video covers the entire area */
-    display: none; /* Hide the video initially */
+    object-fit: cover;
+    display: none;
     z-index: 0; 
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
+    transition: clip-path 0.5s ease-in-out;
 }
 .grid-image:hover .video {
-    display: block; /* Show video on hover */
+    display: block; 
+    clip-path: polygon(30% 0, 100% 0, 100% 70%, 70% 100%, 0 100%, 0 30%);
 }
 
 .grid-image:hover img {
-    display: none; /* Hide image on hover */
+    display: none; 
 }
 .grid-subcaption{
     font-family: "IBM Plex Mono", sans-serif;
