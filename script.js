@@ -145,30 +145,31 @@ const gridElements = document.querySelectorAll('.grid-element');
     });
   });
 
-  fetch('https://github.com/klandrove/interactive-replica/blob/main/data.json', { mode: 'no-cors'})
-    .then(response => response.json())
-    .then(data => {
-      const gridContainer = document.getElementById('grid-container');
+const myRequest = new Request('https://raw.githubusercontent.com/klandrove/interactive-replica/refs/heads/main/data.json');
 
-      // Loop through each item in the JSON data and create the grid elements
+fetch(myRequest, { method: 'GET'})
+.then(response => {
+  if (!response.ok) {
+    throw new Error('Network response was not ok');
+  }
+  return response.json();
+})
+.then(data => {
+  const gridContainer = document.getElementById('grid-container');
+
       data.forEach(item => {
-        // Create grid element container
-        console.log(item);
         const gridElement = document.createElement('div');
         gridElement.classList.add('grid-element');
         gridElement.setAttribute('data-category', item.category);
 
-        // Create the image and video container
         const gridImage = document.createElement('div');
         gridImage.classList.add('grid-image');
 
-        // Create and add the image element
         const img = document.createElement('img');
         img.src = item.imageUrl;
         img.alt = item.caption;
         gridImage.appendChild(img);
 
-        // Create and add the video element
         const video = document.createElement('video');
         video.classList.add('video');
         video.loop = true;
@@ -179,23 +180,20 @@ const gridElements = document.querySelectorAll('.grid-element');
         video.appendChild(videoSource);
         gridImage.appendChild(video);
 
-        // Create the caption
         const caption = document.createElement('p');
         caption.classList.add('grid-caption');
         caption.textContent = item.caption;
 
-        // Create the subcaption
         const subcaption = document.createElement('p');
         subcaption.classList.add('grid-subcaption');
         subcaption.innerHTML = item.subcaption;
 
-        // Append the image/video and caption to the grid element
         gridElement.appendChild(gridImage);
         gridElement.appendChild(caption);
         gridElement.appendChild(subcaption);
 
-        // Append the grid element to the grid container
         gridContainer.appendChild(gridElement);
       });
     })
-    .catch(error => console.error('Error fetching the data:', error));
+.catch(error => console.error('Error fetching the data:', error));
+
