@@ -1,0 +1,99 @@
+[
+    {
+        "imageUrl": "images/Chobani.jpg",
+        "altTect": "Chobani",
+        "videoUrl": "videos/Chobani.mp4",
+        "caption": "chobani nutrition lab",
+        "subcaption": "Chobani",
+        "category": "Experiential"
+    },
+    {
+        "imageUrl": "images/Beetlejuice.jpg",
+        "altText": "Beetlejuice",
+        "videoUrl": "videos/Beetlejuice.mp4",
+        "caption": "Beetlejuice Beetlejuice",
+        "subcaption": "Warner Bros.",
+        "category": "Digital"
+    },
+    {
+        "imageUrl": "images/Discord.jpg",
+        "altText": "Discord",
+        "videoUrl": "videos/Discord.mp4",
+        "caption": "Discord.com",
+        "subcaption": "Discord",
+        "category": "Digital"
+    },
+    {
+        "imageUrl": "images/Target.jpg",
+        "altText": "Target",
+        "videoUrl": "videos/Target.mp4",
+        "caption": "Target Wonderland",
+        "subcaption": "Target",
+        "category": "Experiential"
+    },
+    {
+        "imageUrl": "images/IsoVis.jpg",
+        "altText": "Iso Visualizer",
+        "videoUrl": "videos/IsoVis.mp4",
+        "caption": "ISO Visualizer",
+        "subcaption": "Riot",
+        "category": "Films"
+    },
+    {
+        "imageUrl": "images/AMEX.jpg",
+        "altText": "AMEX",
+        "videoUrl": "videos/AMEX.mp4",
+        "caption": "Door to Shop Small",
+        "subcaption": "Amex",
+        "category": "Experiential"
+    },
+    {
+        "imageUrl": "images/Codee.jpg",
+        "altText": "Codee",
+        "videoUrl": "videos/Codee.mp4",
+        "caption": "Meet Codee",
+        "subcaption": "Codashop",
+        "category": "Branding"
+    },
+    {
+        "imageUrl": "images/Nespresso.jpg",
+        "altText": "Nespresso",
+        "videoUrl": "videos/Nespresso.mp4",
+        "caption": "ARt of Escape",
+        "subcaption": "Nespresso",
+        "category": "Digital"
+    },
+    {
+        "imageUrl": "images/Silver.png",
+        "altText": "Silver",
+        "videoUrl": "videos/Silver.mp4",
+        "caption": "Start In Silvers",
+        "subcaption": "Silver Jeans",
+        "category": "Branding"
+    },
+    {
+        "imageUrl": "images/Adobe.png",
+        "altText": "Adobe Consonant",
+        "videoUrl": "videos/Adobe.mp4",
+        "caption": "Adobe Consonant",
+        "subcaption": "Adobe",
+        "category": "Digital, Branding"
+    },
+    {
+        "imageUrl": "images/Starbucks.jpg",
+        "altText": "Starbucks Horoscope",
+        "videoUrl": "videos/Starbucks.mp4",
+        "caption": "Starbucks Horoscope",
+        "subcaption": "Starbucks",
+        "category": "Digital"
+    },
+    {
+        "imageUrl": "images/VCT.jpg",
+        "altText": "VCT Masters Tokyo",
+        "videoUrl": "videos/VCT.mp4",
+        "caption": "VCT Masters Tokyo",
+        "subcaption": "Riot",
+        "category": "Digital"
+    }
+  ]
+  
