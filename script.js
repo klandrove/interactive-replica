@@ -153,6 +153,7 @@ const gridElements = document.querySelectorAll('.grid-element');
       // Loop through each item in the JSON data and create the grid elements
       data.forEach(item => {
         // Create grid element container
+        console.log(item);
         const gridElement = document.createElement('div');
         gridElement.classList.add('grid-element');
         gridElement.setAttribute('data-category', item.category);
