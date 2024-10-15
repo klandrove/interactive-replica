@@ -153,7 +153,6 @@ function displayData(data){
   data.forEach(item => {
     const gridElement = document.createElement('div');
     gridElement.classList.add('grid-element');
-    gridElement.setAttribute('data-category', item.category);
 
     const gridImage = document.createElement('div');
     gridImage.classList.add('grid-image');
