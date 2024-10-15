@@ -19,8 +19,7 @@ fetch(myRequest, { method: 'GET'})
 function playVideo(event){
     var image = event.target;
     var gridImage = image.closest('.grid-image');
-    const videoElement = gridImage.querySelector('.video');  
-    
+    const videoElement = gridImage.querySelector('.video'); 
     videoElement.play(); // Play the video on hover
 }
 function stopVideo(event){
