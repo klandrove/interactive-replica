@@ -131,12 +131,11 @@ input[type="radio"]:not(:checked):hover {
     object-fit: cover;
     display: none;
     z-index: 0; 
-    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
-    transition: opacity 0.5s ease,clip-path 0.5s ease-in-out;
+    transition: opacity 0.5s ease;
 }
 .grid-image:hover .video {
     display: block; 
-    height: auto;
+    height: 100%;
     clip-path: polygon(30% 0, 100% 0, 100% 70%, 70% 100%, 0 100%, 0 30%);
 }
 
