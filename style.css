@@ -173,6 +173,7 @@ body {
     opacity: 0;
     transform: translate(-50%, -50%);
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    z-index: 2;
 }
 
 .cursor-dot {
@@ -195,6 +196,7 @@ body {
     transition: opacity 0.2s ease; /* Smooth transition when showing/hiding */
     transform: translate(-50%, -50%);
     color: #fff679;
+    z-index: 3;
 }
 .footer {
     padding-top: 10vh;
