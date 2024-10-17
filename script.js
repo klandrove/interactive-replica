@@ -138,7 +138,7 @@ radioButtons.forEach(radio => {
     if(selectedCategory === 'all'){
       newData = allData;
     } else {
-      newData = allData.filter(item => item.category.includes(selectedCategory));
+      newData = allData.filter(item => item.category.toLowerCase().includes(selectedCategory.toLowerCase()));
     }
     displayData(newData);
   });
