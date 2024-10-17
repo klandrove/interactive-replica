@@ -40,6 +40,7 @@ p{
     margin: auto;
     padding-top: 14vh;
     padding-bottom: 4vh;
+    position: fixed;
 }
 .logo{
     filter: invert(100%);
