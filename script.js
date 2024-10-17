@@ -134,12 +134,11 @@ const gridElements = document.querySelectorAll('.grid-element');
 radioButtons.forEach(radio => {
   radio.addEventListener('change', function() {
     const selectedCategory = this.value;
-    console.log(selectedCategory);
     var newData = [];
     if(selectedCategory === 'all'){
       newData = allData;
     } else {
-      newData = allData.filter(item => item.category === selectedCategory);
+      newData = allData.filter(item => item.category.includes(selectedCategory));
     }
     displayData(newData);
   });
