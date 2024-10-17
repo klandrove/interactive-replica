@@ -55,6 +55,7 @@ var cursor = {
   
         
         var gridImages= document.querySelectorAll('.grid-image');
+        var links = document.querySelectorAll('a');
 
         // Anchor hovering
         gridImages.forEach(function(el) {
@@ -67,7 +68,16 @@ var cursor = {
                 self.toggleCursorSize();
             });
         });
-  
+        links.forEach(function(el) {
+            el.addEventListener('mouseover', function() {
+                self.cursorEnlarged = true;
+                self.toggleCursorSize();
+            });
+            el.addEventListener('mouseout', function() {
+                self.cursorEnlarged = false;
+                self.toggleCursorSize();
+            });
+        });
   
         document.addEventListener('mousemove', function(e) {
             // Show the cursor
@@ -132,9 +142,9 @@ var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navbar").style.top = "0";
+    document.getElementById("navbar").style.top = "-14vh";
   } else {
-    document.getElementById("navbar").style.top = "-50px";
+    document.getElementById("navbar").style.top = "-40vh";
   }
   prevScrollpos = currentScrollPos;
 }
