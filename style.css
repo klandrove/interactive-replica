@@ -109,7 +109,6 @@ input[type="radio"]:not(:checked):hover {
 .grid-element{
     max-width: 100%; 
     overflow: hidden;
-    border: red 1px solid;
 }
 .grid-image{
     position: relative;
