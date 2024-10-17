@@ -120,6 +120,7 @@ input[type="radio"]:not(:checked):hover {
     overflow: hidden;
     width: 100%;
     transition: transform 0.3s ease;
+    aspect-ratio: 3/4;
 }
 .grid-image img {
     width: 100%;
