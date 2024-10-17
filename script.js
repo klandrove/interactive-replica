@@ -140,6 +140,9 @@ radioButtons.forEach(radio => {
     } else {
       newData = allData.filter(item => item.category.toLowerCase().includes(selectedCategory.toLowerCase()));
     }
+    allData.forEach(item => {
+      console.log(item.category.toLowerCase().includes(selectedCategory.toLowerCase()));
+    });
     displayData(newData);
   });
 });
